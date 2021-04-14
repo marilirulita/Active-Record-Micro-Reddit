@@ -1,8 +1,8 @@
-class Post < ApplicationRecord
-  validates :title, presence: true
+class Comment < ApplicationRecord
   validates :body, presence: true
+  validates :post_id, presence: true
   validates :user_id, presence: true
 
   belongs_to :user
-  has_many :comments
+  belongs_to :post
 end
