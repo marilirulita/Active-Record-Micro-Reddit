@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Comment < ApplicationRecord
   validates :body, presence: true
   validates :post_id, presence: true
