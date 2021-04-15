@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby.exe
-
 APP_ROOT = File.expand_path('..', __dir__)
 Dir.chdir(APP_ROOT) do
   yarn = ENV['PATH'].split(File::PATH_SEPARATOR)
